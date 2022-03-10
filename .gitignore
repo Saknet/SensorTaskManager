@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+.dockerignore
+.eslintignore
+.DS_Store
+coverage/
+postgres-data/
