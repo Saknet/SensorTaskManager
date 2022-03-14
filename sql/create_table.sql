@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS taskingcapability (
     name text,
     description text,   
     thing text NOT NULL,
+    actuator_id bigint NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -21,6 +22,7 @@ CREATE TABLE IF NOT EXISTS task (
 	id bigserial NOT NULL,
     taskingParameters jsonb, 
     creationTime timestamptz,
+    taskingcapability_id bigint NOT NULL,
     PRIMARY KEY (id)
 );
 
